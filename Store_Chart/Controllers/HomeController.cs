@@ -17,7 +17,7 @@ namespace Store_Chart.Controllers
         }
 
         public IActionResult
-     Index()
+        Index()
         {
             var orderData = GetOrderDataByMonth();
             return View(orderData);

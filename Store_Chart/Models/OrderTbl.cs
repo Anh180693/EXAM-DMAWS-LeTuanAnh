@@ -9,5 +9,8 @@ namespace Store_Chart.Models
         public string? OrderAddress { get; set; }
         public string? PhoneNumber { get; set; }
 
+        public string? RequestId { get; set; }
+
+        public bool ShowRequestId => !string.IsNullOrEmpty(ItemCode);
     }
 }
